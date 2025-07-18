@@ -1,0 +1,73 @@
+1.Tombol + LED (Input & Output)
+ 
+const int tombol = 5;      
+const int ledMerah = 4;    
+
+void setup() {
+  pinMode(tombol, INPUT);         
+  pinMode(ledMerah, OUTPUT);     
+}
+
+void loop() {
+  int nilaiTombol = digitalRead(tombol);
+  if (nilaiTombol == HIGH) {
+    digitalWrite(ledMerah, HIGH); 
+    delay(100);                   
+  }
+
+  if (nilaiTombol == LOW) {
+    digitalWrite(ledMerah, LOW);  
+  }
+}
+
+
+
+
+2. Tombol Untuk Nyalakan dan Matikan LED
+
+const int pinLED = 13;
+const int tombolOn = 2;
+const int tombolOff = 3;
+
+void setup() {
+  pinMode(pinLED, OUTPUT);
+  pinMode(tombolOn, INPUT_PULLUP);
+  pinMode(tombolOff, INPUT_PULLUP);
+}
+
+void loop() {
+
+  if (digitalRead(tombolOn) == LOW) {
+    digitalWrite(pinLED, HIGH); 
+  }
+
+
+  if (digitalRead(tombolOff) == LOW) {
+    digitalWrite(pinLED, LOW);   // LED mati
+  }
+}
+
+
+
+3. Tombol Tahan untuk LED Nyala Lepas Mati
+
+const int tombol = 5;      
+const int ledMerah = 4;    
+
+void setup() {
+  pinMode(tombol, INPUT);         
+  pinMode(ledMerah, OUTPUT);     
+}
+
+void loop() {
+  int nilaiTombol = digitalRead(tombol);
+  if (nilaiTombol == HIGH) {
+    digitalWrite(ledMerah, HIGH); 
+    delay(100);                   
+  }
+
+  if (nilaiTombol == LOW) {
+    digitalWrite(ledMerah, LOW);  
+  }
+}
+
