@@ -1,5 +1,5 @@
 1.Tombol + LED (Input & Output)
- 
+
 const int tombol = 5;      
 const int ledMerah = 4;    
 
@@ -19,6 +19,7 @@ void loop() {
     digitalWrite(ledMerah, LOW);  
   }
 }
+
 
 
 
@@ -46,6 +47,8 @@ void loop() {
     digitalWrite(pinLED, LOW);   // LED mati
   }
 }
+
+
 
 
 
